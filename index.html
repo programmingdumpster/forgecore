@@ -72,7 +72,6 @@
             max-width: 600px;
         }
 
-        /* Module Grid */
         #product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -198,15 +197,13 @@
     <p>Modular scripts and systems for Roblox developers.</p>
 </section>
 
-<div id="product-grid">
-    </div>
+<div id="product-grid"></div>
 
 <footer>
     <p>// FORGECORE.LUA | PROFESSIONAL ASSETS</p>
 </footer>
 
 <script>
-    // List your JSON filenames here
     const productFiles = [
         'products/forgedss-v2.json',
     ];
@@ -222,7 +219,8 @@
                 const card = document.createElement('div');
                 card.className = 'module-card';
                 
-                const featuresHtml = data.features.map(f => `<li>${f}</li>`).join('');
+                const specs = data.technical_specs || [];
+                const featuresHtml = specs.map(f => `<li>${f}</li>`).join('');
 
                 card.innerHTML = `
                     <div class="preview-box">
@@ -234,7 +232,7 @@
                     <ul class="features">${featuresHtml}</ul>
                     <div class="card-action">
                         <div class="price">${data.price} <span>R$</span></div>
-                        <a href="${data.link}" class="btn-store" target="_blank">Creator Store</a>
+                        <a href="${data.url}" class="btn-store" target="_blank">Creator Store</a>
                     </div>
                 `;
                 
