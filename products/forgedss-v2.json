@@ -1,15 +1,15 @@
 {
     "id": "data-handler",
-    "name": "DataStore Manager",
+    "name": "AdvancedDSS",
     "category": "Backend",
     "image": "assets/datastore.png",
-    "description": "Module for player data persistence with session locking and built-in retry logic for failed Roblox API requests.",
+    "description": "Save data, Lock it so it doesn't corrupt if the player joins a different server quickly, and Retry if Roblox servers are laggy.",
     "technical_specs": [
         "Session locking",
         "Auto-retries (3x)",
         "ProfileService based",
         "Thread-safe"
     ],
-    "price": "800",
-    "url": "https://www.roblox.com/create/store/item/12345"
+    "price": "300 (3.99 USD)",
+    "url": "https://create.roblox.com/store/asset/116219379095805/AdvancedDSS"
 }
