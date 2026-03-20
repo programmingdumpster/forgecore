@@ -1,0 +1,15 @@
+{
+    "id": "data-handler",
+    "name": "DataStore Manager",
+    "category": "Backend",
+    "image": "assets/datastore.png",
+    "description": "Module for player data persistence with session locking and built-in retry logic for failed Roblox API requests.",
+    "technical_specs": [
+        "Session locking",
+        "Auto-retries (3x)",
+        "ProfileService based",
+        "Thread-safe"
+    ],
+    "price": "800",
+    "url": "https://www.roblox.com/create/store/item/12345"
+}
